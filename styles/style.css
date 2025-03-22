@@ -1,5 +1,116 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* Общие блоки */
+.container {
+  padding: 0 10px;
+}
+
+.title-decor {
+  background-color: var(--color-accent);
+}
+
+/* page */
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font, IBM Plex Mono);
+  font-size: var(--font-size-text, 18px);
+  line-height: var(--line-height-text, 1.3);
+  background-color: #000028;
+
+}
+
+/* header */
+.header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 75px;
+  padding-bottom: 66px;
+  background-image: url(../images/cover-image-dark.png);
+  object-fit: cover;
+  background-position: bottom center;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-button {
+  padding: 6px 15px;
+  color: var(--color-accent, #FF0070);
+  background-color: transparent;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--color-accent);
+}
+
+.header__title {
+  justify-self: start;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem) ;
+  line-height: var(--line-height-heading-big, .83);
+  color: var(--text-color-heading-big, #DB00FF);
+  text-shadow: var(--text-shadow-heading-big);
+}
+
+.header__subtitle {
+  justify-self: end;
+  max-inline-size: 365px;
+}
+
+/* main */
+.main {
+  padding-top: 40px;
+}
+
+.main__section:not(:first-child) {
+  margin-top: 50px;
+}
+
+.main__section-title {
+  color: var(--color-accent);
+}
+
+.main__section-subtitle {
+  margin-top: 20px;
+}
+
+.main__section-sub-subtitle {
+  margin-top: 20px;
+  font-weight: var(--font-weight-normal);
+}
+
+.main__section-text {
+  margin-top: 10px;
+  color: var(--text-color-primary);
+}
+
+.main__section-text-link {
+  text-shadow: 2px 2px 0 #FF0070;
+}
+
+.main__wrap-images {
+  display: grid;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+
+.main__section-image {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  padding-top: 286px;
+  padding-bottom: 286px;
+}
+
+.footer-title {
+  --text-shadow-heading-big: 2px 2px 0 var(--color-accent);
+  margin: auto;
+  font-size: var(--font-size-heading-big);
+  line-height: var(--line-height-heading-big);
+  color:  var(--text-color-heading-big);
+  text-shadow: var(--text-shadow-heading-big);
+  text-align: center;
 }

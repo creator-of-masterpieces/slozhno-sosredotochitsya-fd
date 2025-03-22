@@ -35,6 +35,8 @@ picture {
 
 button,
 a {
+  border: none;
+  padding: 0;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;

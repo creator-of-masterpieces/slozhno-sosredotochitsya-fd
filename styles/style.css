@@ -8,6 +8,18 @@
   background-color: var(--color-accent);
 }
 
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-top: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+}
+
 /* page */
 .page {
   font-family: var(--main-font, IBM Plex Mono);
@@ -44,8 +56,6 @@
   top: 7px;
   left: 50px;
   display: inline-block;
-  /* margin-inline-start: 10px;
-  margin-block-start: -5px; */
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;

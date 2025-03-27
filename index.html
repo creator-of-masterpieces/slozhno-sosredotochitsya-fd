@@ -22,7 +22,7 @@
 
   <!-- header -->
   <header class="header decorated-zone container">
-    <span class="header__rec">rec</span>
+    <span class="header__rec" aria-hidden="true">rec</span>
 
     <!-- header__theme-menu -->
     <nav class="header__theme-menu">
@@ -45,10 +45,10 @@
         </li>
       </ul>
     </nav>
-    <h1 class="header__title">no focus</h1>
+    <h1 class="title header__title ">no focus</h1>
     <h2 class="header__subtitle title-decor">Что делать, когда не можешь делать ничего
       Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      <h2 />
+    </h2>
   </header>
 
   <!-- main -->
@@ -128,23 +128,27 @@
       <p class="main__section-text">Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост
         в соцсети, достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько
         часов и круто тренирует направленное внимание.</p>
+    </section>
 
-      <!-- main__section -->
-      <section class="main__section">
-        <h3 class="main__section-subtitle title-decor">А можно в картинках?</h3>
-        <div class="main__wrap-images">
-          <img class="main__section-image" src="./images/sunset.png" alt="">
-          <img class="main__section-image" src="./images/ice-cream.png" alt="">
-          <img class="main__section-image" src="./images/tape.png" alt="">
-          <img class="main__section-image" src="./images/books.png" alt="">
-          <img class="main__section-image" src="./images/street.png" alt="">
-        </div>
-      </section>
+    <!-- main__section -->
+    <section class="main__section">
+      <h3 class="main__section-subtitle title-decor">А можно в картинках?</h3>
+      <div class="main__wrap-images">
+        <img class="main__section-image" src="./images/sunset.png" alt="Закат.Солнце заходит за горы" loading="lazy">
+        <img class="main__section-image" src="./images/ice-cream.png"
+          alt="Тарелка с шариками мореженого с кусочками фруктов" loading="lazy">
+        <img class="main__section-image" src="./images/tape.png" alt="Аудиокассета" loading="lazy">
+        <img class="main__section-image" src="./images/books.png" alt="Стопка книг, на вершине стопки стоит чашка"
+          loading="lazy">
+        <img class="main__section-image" src="./images/street.png" alt="Улица с домами по обеим сторонам"
+          loading="lazy">
+      </div>
+    </section>
   </main>
 
-<!-- footer -->
+  <!-- footer -->
   <footer class="footer decorated-zone">
-    <h2 class="footer-title">focus</h2>
+    <h2 class=" title footer__title">focus</h2>
   </footer>
 </body>
 

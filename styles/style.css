@@ -1,12 +1,11 @@
-
 /* Общие блоки */
 .container {
-  max-inline-size: 375px;
+  min-inline-size: 375px;
   padding: 0 10px;
 }
 
 .title {
-  font-size: var(--font-size-heading-big, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(--font-size-heading-big-mobile, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   line-height: var(--line-height-heading-big, .83);
   color: var(--text-color-heading-big, #DB00FF);
 }
@@ -61,6 +60,7 @@
   padding-top: 70px;
   padding-bottom: 66px;
 }
+
 .header__rec {
   position: absolute;
   top: 10px;
@@ -118,7 +118,7 @@
   color: aliceblue;
 }
 
-.header__theme-menu-button:focus-visible::before{
+.header__theme-menu-button:focus-visible::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -204,3 +204,34 @@
   margin: auto;
   text-shadow: var(--text-shadow-heading-big);
 }
+
+
+/* Экран больше 768px */
+@media (min-width: 768px) {
+
+  /* Общие блоки */
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: var(--font-size-heading-big-desktop, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+  }
+
+  /* Header */
+  .header {
+    padding-top: 192px;
+  }
+
+  .header__title {
+    margin-left: -20px;
+  }
+  .header__subtitle {
+    margin-top: 162px;
+  }
+
+}
+
+
+/* Экран больше 1024px */
+@media (max-width: 1024px) {}

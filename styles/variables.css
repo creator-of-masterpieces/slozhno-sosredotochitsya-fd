@@ -28,4 +28,7 @@
 
   /* Пути до картинок */
   --bg-image: url(../images/cover-image-dark.png);
+
+  /* Отступы */
+  --grid-gap: 20px;
 }

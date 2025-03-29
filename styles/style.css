@@ -270,11 +270,8 @@
   }
 
   .main__section-title {
-    padding-right: 20px;
-  }
-
- .main__section_layout-type_two .main__section-title {
     max-inline-size: 236px;
+    padding-right: 20px;
   }
 
   .main__images {
@@ -301,7 +298,7 @@
 
   /* footer */
   .footer {
-    min-block-size: 768px;
+    min-block-size: 1024px;
     margin-top: 80px;
   }
 }
@@ -337,5 +334,19 @@
   .page__main {
     margin-top: 80px;
   }
-  
+
+  .main__section_layout-type_two .main__section-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--grid-gap, 20px);
+  }
+
+  .main__section-title {
+    max-inline-size: 315px;
+    padding-right: 0;
+  }
+
+  .footer {
+    min-block-size: 768px;
+  }
 }

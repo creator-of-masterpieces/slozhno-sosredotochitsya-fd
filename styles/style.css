@@ -48,8 +48,7 @@
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  object-fit: cover;
+  background-position: top;
 }
 
 /* header */
@@ -309,6 +308,34 @@
 
 
 /* Экран >= 1024px */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 
+  /* header */
+  .header {
+    padding-top: 0;
+    padding-bottom: 114px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__title {
+    margin-top: 273px;
+  }
+
+  .header__subtitle {
+    max-inline-size: 491px;
+  }
+
+  /* main */
+  .page__main {
+    margin-top: 80px;
+  }
+  
 }

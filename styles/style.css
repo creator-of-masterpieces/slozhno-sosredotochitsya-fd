@@ -1,3 +1,4 @@
+
 /* Общие блоки */
 .container {
   min-inline-size: 375px;
@@ -105,7 +106,12 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button_active {
+  outline: 1px solid var(--color-interactive, #FF0070);
+}
+
 .header__theme-menu-button:hover {
+  cursor: pointer;
   outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
@@ -113,15 +119,21 @@
   outline: none;
 }
 
+.header__theme-menu-button:focus-visible {
+  outline: none;
+}
+
 .header__theme-menu-button:focus-visible::before {
   content: "";
   position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 1px;
   background-color: var(--color-interactive, #FF0070);
 }
 
-.header__theme-menu-button_active {
+.header__theme-menu-button_active:hover {
   outline: 1px solid var(--color-interactive, #FF0070);
 }
 
@@ -186,7 +198,26 @@
 }
 
 .main__section-text-link {
+  position: relative;
   text-shadow: 2px 2px 0 var(--color-interactive, #FF0070);
+}
+
+.main__section-text-link:hover {
+  cursor: pointer;
+}
+
+.main__section-text-link:focus-visible {
+  outline: 1px solid #F1B2CE;
+}
+
+.main__section-text-link:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #F1B2CE;
 }
 
 .main__images {

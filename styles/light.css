@@ -16,7 +16,7 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--bg-image, url(../images/cover-image-light.png));
 }
 
 .theme-light .title {
@@ -66,6 +66,11 @@
 .theme-light .main__section-title {
   color: var(--color-section-heading, #353430);
 }
+
+.theme-light .main__section-text-link {
+  text-shadow: 2px 2px 0 #FF8DCB;
+}
+
 
 
 

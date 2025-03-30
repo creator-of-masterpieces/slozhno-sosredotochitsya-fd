@@ -15,6 +15,25 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+  /* Цвет текста */
+  --color-accent: #FF8DCB;
+  --color-interactive: #353430;
+  --color-main-heading: #FFC2E6;
+  --color-section-heading: #353430;
+  --color-text-primary: #353430;
+
+  /* Декоративные элементы */
+  --text-shadow-main-heading: 4px 4px 0 var(--color-accent);
+  --color-decor-element: #353430;
+
+  /* Пути до картинок */
+  --bg-image: url(../images/cover-image-light.png);
+  }
+}
+
+
 .theme-light .page {
   background-image: var(--bg-image, url(../images/cover-image-light.png));
 }
@@ -70,7 +89,6 @@
 .theme-light .main__section-text-link {
   text-shadow: 2px 2px 0 #FF8DCB;
 }
-
 
 
 

@@ -1,18 +1,18 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
+
   /* Цвет текста */
-  --text-color-primary: #353430;
-  --color-interactive: #353430;
-  --text-color-heading-big: #FFC2E6;
   --color-accent: #FF8DCB;
+  --color-interactive: #353430;
+  --color-main-heading: #FFC2E6;
+  --color-section-heading: #353430;
+  --color-text-primary: #353430;
 
   /* Декоративные элементы */
-  --text-shadow-heading-big: 4px 4px 0 var(--color-accent);
+  --text-shadow-main-heading: 4px 4px 0 var(--color-accent);
+  --color-decor-element: #353430;
+
+  /* Пути до картинок */
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
@@ -20,7 +20,7 @@
 }
 
 .theme-light .title {
-  color: var(--text-color-heading-big, #FFC2E6);
+  color: var(--color-main-heading, #FFC2E6);
 }
 
 .theme-light .header__rec {
@@ -28,39 +28,44 @@
 }
 
 .theme-light .decorated-zone::before {
-  border-color: var(--color-interactive, #353430);
+  border-color: var(--color-decor-element, #353430);
 }
 
 .theme-light .decorated-zone::after {
-  border-color: var(--color-interactive, #353430);
+  border-color: var(--color-decor-element, #353430);
 }
 
-.header__theme-menu-button {
+.theme-light .header__theme-menu-button {
   color: var(--color-interactive, #353430);
 }
 
-.header__theme-menu-button_active {
+.theme-light .header__theme-menu-button_active {
   outline: 1px solid var(--color-interactive, #353430);
 }
 
-.header__theme-menu-button:hover {
+.theme-light .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
-.header__theme-menu-button:focus-visible::before {
+.theme-light .header__theme-menu-button:focus-visible::before {
   background-color: var(--color-interactive, #353430);
 }
 
-.theme-light .header__title {
-  text-shadow: var(--text-shadow-heading-big);
+  .theme-light .header__title {
+  text-shadow: var(--text-shadow-main-heading);
 }
 
-.header__subtitle {
-  color: var(--text-color-primary, #353430);
+.theme-light .header__subtitle {
+  color: var(--color-text-primary, #353430);
 }
 
-.title-decor {
+.theme-light .title-decor {
   background-color: var(--color-accent, #FF8DCB);
 }
+
+.theme-light .main__section-title {
+  color: var(--color-section-heading, #353430);
+}
+
 
 

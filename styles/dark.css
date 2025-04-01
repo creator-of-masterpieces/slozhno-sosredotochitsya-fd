@@ -17,6 +17,7 @@
   --decorate-corners: 1px solid var(--color-decor-element, #FF0070);
   --color-decor-element: #FF0070;
   --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
+  --color-link-outline: #F1B2CE;
   --color-link-underline: #F1B2CE;
 
   /* Пути до картинок */

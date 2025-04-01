@@ -14,7 +14,8 @@
   --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #FF8DCB);
   --text-shadow-link: 2px 2px 0 #FF8DCB;
   --color-decor-element: #353430;
-  --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
+  --color-btn-outline-hover: rgba(50, 49, 45, 0.4);
+  --color-link-outline: #353430;
   --color-link-underline: #353430;
 
   /* Пути до картинок */
@@ -37,7 +38,8 @@
   --text-shadow-main-heading: 4px 4px 0 var(#FF8DCB);
   --text-shadow-link: 2px 2px 0 var(#FF8DCB);
   --color-decor-element: rgba(50, 49, 45, 0.4);
-  --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
+  --color-btn-outline-hover: rgba(50, 49, 45, 0.4);
+  --color-link-outline: #353430;
   --color-link-underline: #353430;
 
   /* Пути до картинок */

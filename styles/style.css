@@ -105,6 +105,7 @@
   background-color: transparent;
   line-height: 1;
   text-transform: lowercase;
+  transition: all .5s linear;
 }
 
 .header__theme-menu-button_active {

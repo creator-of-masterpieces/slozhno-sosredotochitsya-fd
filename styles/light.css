@@ -7,9 +7,14 @@
   --color-section-heading: #353430;
   --color-text-primary: #353430;
 
+  /* Цвет фона */
+  --bg-color-page: #FFF1F7;
+
   /* Декоративные элементы */
-  --text-shadow-main-heading: 4px 4px 0 var(--color-accent);
+  --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #FF8DCB);
+  --text-shadow-link: 2px 2px 0 var(--color-interactive, #FF0070);
   --color-decor-element: #353430;
+  --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
 
   /* Пути до картинок */
   --bg-image: url(../images/cover-image-light.png);
@@ -24,71 +29,25 @@
   --color-section-heading: #353430;
   --color-text-primary: #353430;
 
+  /* Цвет фона */
+  --bg-color-page: #FFF1F7;
+
   /* Декоративные элементы */
-  --text-shadow-main-heading: 4px 4px 0 var(--color-accent);
-  --color-decor-element: #353430;
+  --text-shadow-main-heading: 4px 4px 0 var(#FF8DCB);
+  --text-shadow-link: 2px 2px 0 var(--color-interactive, #FF0070);
+  --color-decor-element: rgba(50, 49, 45, 0.4);
+  --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
 
   /* Пути до картинок */
   --bg-image: url(../images/cover-image-light.png);
   }
-}
 
-
-.theme-light .page {
-  background-image: var(--bg-image, url(../images/cover-image-light.png));
-}
-
-.theme-light .title {
-  color: var(--color-main-heading, #FFC2E6);
+  /* Отображение надписи rec */
+  .header__rec {
+    display: none;
+  }
 }
 
 .theme-light .header__rec {
   display: none;
 }
-
-.theme-light .decorated-zone::before {
-  border-color: var(--color-decor-element, #353430);
-}
-
-.theme-light .decorated-zone::after {
-  border-color: var(--color-decor-element, #353430);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--color-interactive, #353430);
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--color-interactive, #353430);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible::before {
-  background-color: var(--color-interactive, #353430);
-}
-
-  .theme-light .header__title {
-  text-shadow: var(--text-shadow-main-heading);
-}
-
-.theme-light .header__subtitle {
-  color: var(--color-text-primary, #353430);
-}
-
-.theme-light .title-decor {
-  background-color: var(--color-accent, #FF8DCB);
-}
-
-.theme-light .main__section-title {
-  color: var(--color-section-heading, #353430);
-}
-
-.theme-light .main__section-text-link {
-  text-shadow: 2px 2px 0 #FF8DCB;
-}
-
-
-

@@ -45,7 +45,7 @@
   font-family: var(--main-font, IBM Plex Mono, Arial, sans-serif);
   font-size: var(--font-size-text, 18px);
   line-height: var(--line-height-text, 1.3);
-  background-color: #000028;
+  background-color: var(--bg-color-page);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -113,7 +113,7 @@
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--color-btn-outline-hover, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus {
@@ -198,7 +198,7 @@
 
 .main__section-text-link {
   position: relative;
-  text-shadow: 2px 2px 0 var(--color-interactive, #FF0070);
+  text-shadow: var(--text-shadow-link);
 }
 
 .main__section-text-link:hover {

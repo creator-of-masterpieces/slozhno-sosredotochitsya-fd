@@ -20,14 +20,19 @@
   --color-section-subtitle: #000028;
   --color-text-primary: #F1B2CE;
 
+  /* Цвет фона */
+  --bg-color-page: #000028;
+
   /* Жирность */
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
   /* Декоративные элементы */
   --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #FF0070);
-  --color-decor-element: #FF0070;
+  --text-shadow-link: 2px 2px 0 var(--color-interactive, #FF0070);
   --decorate-corners: 1px solid var(--color-decor-element, #FF0070);
+  --color-decor-element: #FF0070;
+  --color-btn-outline-hover: rgba(255, 0, 112, 0.4);
 
   /* Пути до картинок */
   --bg-image: url(../images/cover-image-dark.png);

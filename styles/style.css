@@ -91,7 +91,7 @@
 
 .header__theme-menu {
   min-block-size: 229px;
-  padding-top: 64px;
+  margin-block-start: 64px;
   justify-self: end;
 }
 
@@ -150,7 +150,7 @@
 
 .header__subtitle {
   max-inline-size: 365px;
-  margin-top: 53px;
+  margin-block-start: 53px;
   align-self: start;
   justify-self: end;
   font-size: var(--font-size-text, 18px);
@@ -275,9 +275,11 @@
   }
 
   .decorated-zone::before {
+    top: 20px;
     right: 20px;
   }
   .decorated-zone::after {
+    bottom: 20px;
     left: 20px;
   }
     
@@ -288,16 +290,26 @@
   }
 
   .header__rec {
+    top: 20px;
     right: 30px;
   }
   
   .header__title {
-    margin-left: -20px;
+    margin-block-start: 45px;
+    margin-inline-start: -20px;
+  }
+
+  .header__subtitle {
+    margin-block-start: 160px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 170px;  
   }
 
   /* main */
   .page__main {
-    margin-top: 243px;
+    margin-block-start: 60px;
   }
 
   .main__section:not(:first-child) {
@@ -311,9 +323,11 @@
 
   .main__section-title {
     max-inline-size: 236px;
-    padding-right: 20px;
   }
 
+  .main-section-images {
+    row-gap: var(--grid-gap);
+  }
   .main__images {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -335,6 +349,11 @@
   .main__image-street {
     grid-column: span 2;
   }
+
+  .footer {
+    margin-block-start: 60px;
+  }
+  
 }
 
 
@@ -343,21 +362,28 @@
 
   /* header */
   .header__theme-menu {
+    margin-block-start: 0;
     justify-self: center;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
+    column-gap: 10px;
   }
+
+  .header__title {
+    margin-block-start: 70px;
+}
 
   .header__subtitle {
     max-inline-size: 491px;
+    margin-block-start: 114px;
   }
 
   /* main */
   .page__main {
-    margin-top: 80px;
+    margin-block-start: 60px;
   }
 
   .main__section_layout-type_two-columns {
@@ -372,15 +398,8 @@
     max-inline-size: 315px;
     padding-right: 0;
   }
-}
 
-/* Для экранов > 1024px */
-@media (min-width: 1025px) {
-  .header {
-    grid-template-rows: 1fr min-content 1fr;
-  }
-
-  .header__subtitle {
-    align-self: center;
+  .footer__title {
+    margin-block-start: 0;
   }
 }

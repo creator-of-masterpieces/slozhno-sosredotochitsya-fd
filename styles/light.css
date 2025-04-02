@@ -1,20 +1,19 @@
 :root.theme-light {
-
   /* Цвет текста */
-  --color-accent: #FF8DCB;
+  --color-accent: #ff8dcb;
   --color-interactive: #353430;
-  --color-main-heading: #FFC2E6;
+  --color-main-heading: #ffc2e6;
   --color-section-heading: #353430;
   --color-text-primary: #353430;
 
   /* Цвет фона */
-  --bg-color-page: #FFF1F7;
+  --bg-color-page: #fff1f7;
 
   /* Декоративные элементы */
-  --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #FF8DCB);
-  --text-shadow-link: 2px 2px 0 #FF8DCB;
+  --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #ff8dcb);
+  --text-shadow-link: 2px 2px 0 #ff8dcb;
   --color-decor-element: #353430;
-  --color-btn-outline-hover: rgba(50, 49, 45, 0.4);
+  --color-btn-outline-hover: rgb(50 49 45 / 0.4);
   --color-link-outline: #353430;
   --color-link-underline: #353430;
 
@@ -23,30 +22,32 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
-  /* Цвет текста */
-  --color-accent: #FF8DCB;
-  --color-interactive: #353430;
-  --color-main-heading: #FFC2E6;
-  --color-section-heading: #353430;
-  --color-text-primary: #353430;
+    /* Цвет текста */
+    --color-accent: #ff8dcb;
+    --color-interactive: #353430;
+    --color-main-heading: #ffc2e6;
+    --color-section-heading: #353430;
+    --color-text-primary: #353430;
 
-  /* Цвет фона */
-  --bg-color-page: #FFF1F7;
+    /* Цвет фона */
+    --bg-color-page: #fff1f7;
 
-  /* Декоративные элементы */
-  --text-shadow-main-heading: 4px 4px 0 var(#FF8DCB);
-  --text-shadow-link: 2px 2px 0 var(#FF8DCB);
-  --color-decor-element: rgba(50, 49, 45, 0.4);
-  --color-btn-outline-hover: rgba(50, 49, 45, 0.4);
-  --color-link-outline: #353430;
-  --color-link-underline: #353430;
+    /* Декоративные элементы */
+    --text-shadow-main-heading: 4px 4px 0 var(#ff8dcb);
+    --text-shadow-link: 2px 2px 0 var(#ff8dcb);
+    --color-decor-element: rgb(50 49 45 / 0.4);
+    --color-btn-outline-hover: rgb(50 49 45 / 0.4);
+    --color-link-outline: #353430;
+    --color-link-underline: #353430;
 
-  /* Пути до картинок */
-  --bg-image: url(../images/cover-image-light.png);
+    /* Пути до картинок */
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   /* Отображение надписи rec */
+
   .header__rec {
     display: none;
   }

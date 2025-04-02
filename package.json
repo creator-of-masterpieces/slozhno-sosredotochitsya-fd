@@ -1,0 +1,23 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "description": "https://github.com/creator-of-masterpieces/slozhno-sosredotochitsya-fd.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creator-of-masterpieces/slozhno-sosredotochitsya-fd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creator-of-masterpieces/slozhno-sosredotochitsya-fd/issues"
+  },
+  "homepage": "https://github.com/creator-of-masterpieces/slozhno-sosredotochitsya-fd#readme",
+  "dependencies": {
+    "prettier": "^3.5.3",
+    "stylelint": "^16.17.0"
+  }
+}

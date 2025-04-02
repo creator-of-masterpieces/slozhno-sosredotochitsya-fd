@@ -73,9 +73,9 @@
 .header {
   position: relative;
   min-block-size: 668px;
-  block-size: calc(100vh);
+  block-size: 100vh;
   display: grid;
-  grid-template-rows: auto min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .page__header {
@@ -105,20 +105,21 @@
 }
 
 .header__theme-menu {
-  min-block-size: 229px;
-  margin-block-start: 64px;
+  display: flex;
+  align-items: center;
   justify-self: end;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 4px;
+  margin-block-end: 8px;
 }
 
 .header__theme-menu-button {
   position: relative;
-  padding: 4px 13px;
+  padding: 7px 15px;
   color: var(--color-interactive, #ff0070);
   background-color: transparent;
   line-height: 1;
@@ -160,13 +161,14 @@
 
 .header__title {
   justify-self: start;
+  margin-block-end: 7px;
   text-shadow: var(--text-shadow-main-heading, 4px 4px 0 var(--color-accent));
 }
 
 .header__subtitle {
   max-inline-size: 365px;
-  margin-block-start: 53px;
-  align-self: start;
+  margin-block-end: 19px;
+  align-self: center;
   justify-self: end;
   font-size: var(--font-size-text, 18px);
   font-weight: var(--font-weight-bold);
@@ -223,7 +225,7 @@
 
 .main__section-text-link {
   position: relative;
-  text-shadow: var(--text-shadow-link, #ff0070);
+  text-shadow: var(--text-shadow-link, 2px 2px 0 #ff0070);
 }
 
 .main__section-text-link:hover {
@@ -287,7 +289,8 @@
   /* Общие блоки */
 
   .container {
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .title {
@@ -308,31 +311,24 @@
   }
 
   /* header */
-
-  .page__header {
-    padding-block-start: 20px;
-  }
-
   .header__rec {
     top: 20px;
     right: 30px;
   }
 
   .header__title {
-    margin-block-start: 45px;
     margin-inline-start: -20px;
+    margin-block-end: 5px;
   }
 
-  .header__subtitle {
-    margin-block-start: 160px;
+  .header__subtitle  {
+    margin-block-end: 28px;
   }
-
-  .header__theme-menu {
-    margin-block-start: 170px;
+  .header__theme-menu-list {
+    margin-block-end: -4px;
   }
 
   /* main */
-
   .page__main {
     margin-block-start: 60px;
   }
@@ -341,7 +337,18 @@
     margin-top: 80px;
   }
 
-  .main__section_layout-type_two-columns {
+  .main__section-why {
+    grid-template-columns: 236px 1fr;
+    column-gap: var(--grid-gap, 20px);
+  }
+
+  .main__section-causes-list {
+    display: grid;
+    gap: var(--grid-gap, 20px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .main__section-advices {
     grid-template-columns: 236px 1fr;
     column-gap: var(--grid-gap, 20px);
   }
@@ -384,11 +391,20 @@
 /* Экран >= 1024px */
 
 @media (min-width: 1024px) {
-  /* header */
 
+  /* header */
   .header__theme-menu {
-    margin-block-start: 0;
     justify-self: center;
+    align-items: start;
+    margin-block-start: 6px;
+  }
+
+  .header__title {
+    margin-block-end: 10px;
+  }
+
+  .header__subtitle {
+    margin-block-end: 30px;
   }
 
   .header__theme-menu-list {
@@ -397,13 +413,8 @@
     column-gap: 10px;
   }
 
-  .header__title {
-    margin-block-start: 70px;
-  }
-
   .header__subtitle {
     max-inline-size: 491px;
-    margin-block-start: 114px;
   }
 
   /* main */
@@ -412,12 +423,8 @@
     margin-block-start: 60px;
   }
 
-  .main__section_layout-type_two-columns {
+  .main__section-why {
     grid-template-columns: 315px 1fr;
-  }
-
-  .main__section_layout-type_three-columns .main__section-list {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .main__section-title {

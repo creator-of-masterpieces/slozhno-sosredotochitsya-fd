@@ -4,6 +4,7 @@
   --color-interactive: #353430;
   --color-main-heading: #ffc2e6;
   --color-section-heading: #353430;
+  --color-section-subtitle: #353430;
   --color-text-primary: #353430;
 
   /* Цвет фона */
@@ -12,6 +13,7 @@
   /* Декоративные элементы */
   --text-shadow-main-heading: 4px 4px 0 var(--color-accent, #ff8dcb);
   --text-shadow-link: 2px 2px 0 #ff8dcb;
+  --decorate-corners: 1px solid #353430;
   --color-decor-element: #353430;
   --color-btn-outline-hover: rgb(50 49 45 / 0.4);
   --color-link-outline: #353430;
@@ -29,14 +31,16 @@
     --color-interactive: #353430;
     --color-main-heading: #ffc2e6;
     --color-section-heading: #353430;
+    --color-section-subtitle: #353430;
     --color-text-primary: #353430;
 
     /* Цвет фона */
     --bg-color-page: #fff1f7;
 
     /* Декоративные элементы */
-    --text-shadow-main-heading: 4px 4px 0 var(#ff8dcb);
-    --text-shadow-link: 2px 2px 0 var(#ff8dcb);
+    --text-shadow-main-heading: 4px 4px 0 #ff8dcb;
+    --text-shadow-link: 2px 2px 0 #ff8dcb;
+    --decorate-corners: 1px solid #353430;
     --color-decor-element: rgb(50 49 45 / 0.4);
     --color-btn-outline-hover: rgb(50 49 45 / 0.4);
     --color-link-outline: #353430;

@@ -1,1 +1,61 @@
+# Общие системные файлы
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+# WebStorm / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+gen/
+
+# Исключение: сохраняем важные файлы в .idea/, если они нужны
+!.idea/codeStyles/
+!.idea/runConfigurations/
+!.idea/vcs.xml
+
+# Временные файлы и бэкапы
+*.log
+*.tmp
+*.bak
+*~
+*.backup
+*.orig
+
+# Зависимости (если проект не использует пакетный менеджер)
 node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
+# Артефакты сборки
+dist/
+build/
+.cache/
+
+# Конфигурации окружения
+.env
+.env.*
+
+# Данные проекта (если генерируются)
+data/cards.generated.json
+
+# Прочие временные файлы редакторов
+*.swp
+*.swo
+*.sublime-workspace
+
+# Папки для тестов
+test-output/
+coverage/
+tmp/
+
+# Скрытые файлы (кроме критически важных)
+.*
+!.gitattributes
+!.gitignore
+!*.md

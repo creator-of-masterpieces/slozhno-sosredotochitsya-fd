@@ -3,9 +3,9 @@
     --main-font: 'IBM Plex mono';
     --text-font-size: 18px;
     --text-line-height: 1.3em;
-    --mobile-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*116-120px */
-    --desktop-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /*120-157px */
-    --title-line-height: .83em;
+    --mobile-slogan-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*116-120px */
+    --desktop-slogan-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /*120-157px */
+    --slogan-line-height: .83em;
 
     /* Базовые цвета */
     --color-hot-pink: #FF0070;
@@ -17,21 +17,24 @@
     --color-fuchsia-vivid: #FF8DCB;
 
     /* Цвета элементов */
-
-    /* Заголовки */
-    --title-color-primary: var(--color-electric-purple);
-    --title-color-secondary: var(--color-hot-pink);
-    --title-color-tetrary: var(--color-navy-deep);
-
     /* Текст */
-    --text-color-primary: var(--color-soft-rose);
+    --text-color-primary: var(--color-hot-pink);
+    --text-color-secondary: var(--color-navy-deep);
+    --text-color-tetriary: var(--color-soft-rose);
+    --text-color-quaternary: var(--color-electric-purple);
+
 
     /* Декор */
     --accent-color: var(--color-hot-pink);
     --shadow-color: var(--color-hot-pink);
-    --text-shadow-normal: 4 4 0 0 var(--color-hot-pink);
+    --text-shadow-normal: 4px 4px var(--color-hot-pink);
     --text-shadow-small: 2 2 0 0 var(--color-hot-pink);
 
     /* Отступы */
     --page-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /* 10-20px */
+
+    /* Фоновые картинки */
+    --page-bg-avif:url(/images/cover-image-dark.avif);
+    --page-bg-webp:url(/images/cover-image-dark.webp);
+    --page-bg-png:url(/images/cover-image-dark.webp);
 }

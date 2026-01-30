@@ -64,7 +64,11 @@
 /* Стили шапки */
 
 .header {
-    padding-block: /* 65-172px */ clamp(4.0625rem, -2.3187rem + 27.2265vw, 10.75rem) /* 56-163px */ clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+    padding-block:
+        /* 65-172px */
+        clamp(4.0625rem, -2.3187rem + 27.2265vw, 10.75rem)
+        /* 56-163px */
+        clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
 }
 
 .header__rec {
@@ -164,7 +168,7 @@
         /* 65-172px */
         padding-block-start: clamp(0rem, 42.3192rem + -65.7692vw, 10.75rem);
         /* 113-64px */
-        padding-block-end: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+        padding-block-end: clamp(114px, calc(310px - 19.14vw), 163px);
     }
 
     .header__slogan {
@@ -333,5 +337,23 @@
     .article-media-block__section_type_street {
         grid-column: 2 / 4;
         grid-row: 3 / 4;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .article-block_type_secondary .article-block__sections {
+        flex-direction: row;
+    }
+
+    .article-block_type_secondary .article-block__section {
+        flex-basis: clamp(19.6875rem, -20.3125rem + 62.5vw, 21.875rem);
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .article-block_type_secondary .article-block__sections {
+        justify-content: space-between;
     }
 }

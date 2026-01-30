@@ -164,7 +164,7 @@
         /* 65-172px */
         padding-block-start: clamp(0rem, 42.3192rem + -65.7692vw, 10.75rem);
         /* 113-64px */
-        padding-block-end: clamp(64px, -19.140625vw + 259.421875px, 113px);
+        padding-block-end: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
     }
 
     .header__slogan {
@@ -211,11 +211,17 @@
 /* Стили секции со статьями */
 
 .articles__item {
-    margin-block-start: clamp(3.125rem, 2.0416rem + 4.6225vw, 5rem);
+    margin-block-start: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
+}
+
+.article-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .article-block__title {
-    width: 100%;
+    flex-basis: 100%;
     font-size: var(--text-font-size);
 }
 
@@ -227,10 +233,17 @@
     color: var(--text-color-secondary);
 }
 
-.article-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+@media (min-width: 768px) {
+
+    .article-block_type_primary {
+        flex-direction: row;
+    }
+
+    .article-block .article-block__title {
+        flex-basis: clamp(236px, 32%, 315px);
+        max-inline-size: clamp(236px, 32%, 315px);
+        flex-shrink: 0;
+    }
 }
 
 .article-block__sections {
@@ -272,11 +285,53 @@
 }
 
 .article-media-block {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
 }
 
 .article-media-block__sections {
     display: grid;
     gap: 10px;
+}
+
+.article-block__image {
+    height: 100%;
+}
+
+
+@media (min-width: 768px) {
+
+    .article-media-block__sections {
+        block-size: clamp(48.75rem, -1.5rem + 104.6875vw, 65.5rem);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 3px;
+    }
+
+    .article-media-block__section_type_sunset {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .article-media-block__section_type_ice-cream {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .article-media-block__section_type_tape {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+
+    .article-media-block__section_type_books {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .article-media-block__section_type_street {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
 }

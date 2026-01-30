@@ -28,7 +28,7 @@
     --accent-color: var(--color-hot-pink);
     --shadow-color: var(--color-hot-pink);
     --text-shadow-normal: 4px 4px var(--color-hot-pink);
-    --text-shadow-small: 2 2 0 0 var(--color-hot-pink);
+    --text-shadow-small: 2px 2px var(--color-hot-pink);
 
     /* Отступы */
     --page-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /* 10-20px */

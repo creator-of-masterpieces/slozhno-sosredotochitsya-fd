@@ -357,3 +357,14 @@
         justify-content: space-between;
     }
 }
+
+.footer {
+    display: flex;
+    block-size: 100dvi;
+    margin-block-start: 50px;
+}
+
+.footer__slogan {
+    margin: auto;
+    text-shadow: var(--text-shadow-small);
+}

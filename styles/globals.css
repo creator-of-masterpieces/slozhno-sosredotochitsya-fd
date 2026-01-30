@@ -41,3 +41,17 @@ button {
   background-color: transparent;
   border: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

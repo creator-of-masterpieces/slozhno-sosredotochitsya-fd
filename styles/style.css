@@ -58,16 +58,13 @@
     font-family: var(--main-font, 'IBM Plex mono', syssem-ui), sans-serif;
     font-size: var(--text-font-size, 18px);
     line-height: var(--text-line-height, 1.3em);
+    color: var(--text-color-tetriary);
 }
 
 /* Стили шапки */
 
 .header {
-    padding-block:
-            /* 65-172px */
-            clamp(4.0625rem, -2.3187rem + 27.2265vw, 10.75rem)
-            /* 56-163px */
-            clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+    padding-block: /* 65-172px */ clamp(4.0625rem, -2.3187rem + 27.2265vw, 10.75rem) /* 56-163px */ clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
 }
 
 .header__rec {
@@ -165,7 +162,7 @@
 
     .header {
         /* 65-172px */
-        padding-block-start:  clamp(0rem, 42.3192rem + -65.7692vw, 10.75rem);
+        padding-block-start: clamp(0rem, 42.3192rem + -65.7692vw, 10.75rem);
         /* 113-64px */
         padding-block-end: clamp(64px, -19.140625vw + 259.421875px, 113px);
     }
@@ -207,4 +204,79 @@
     .header__theme-menu-button {
         padding: 3px 12px;
     }
+}
+
+/* Стили основного контента */
+
+/* Стили секции со статьями */
+
+.articles__item {
+    margin-block-start: clamp(3.125rem, 2.0416rem + 4.6225vw, 5rem);
+}
+
+.article-block__title {
+    width: 100%;
+    font-size: var(--text-font-size);
+}
+
+.article-block__title_type_primary {
+    color: var(--text-color-primary);
+}
+
+.article-block__title_type_secondary {
+    color: var(--text-color-secondary);
+}
+
+.article-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article-block__sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-block__subtitle {
+    font-size: var(--text-font-size);
+}
+
+.article-block__subtitle_type_primary {
+    margin-block-end: 10px;
+}
+
+.article-block__subtitle_type_secondary {
+    margin-block-end: 20px;
+}
+
+
+.article-block__link {
+    position: relative;
+    text-shadow: 2px 2px var(--accent-color);
+}
+
+.article-block__link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.article-block__link:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+.article-media-block {
+    display: grid;
+    gap: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+}
+
+.article-media-block__sections {
+    display: grid;
+    gap: 10px;
 }

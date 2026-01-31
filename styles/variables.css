@@ -7,28 +7,21 @@
     --desktop-slogan-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /*120-157px */
     --slogan-line-height: .83em;
 
-    /* Базовые цвета */
-    --color-hot-pink: #FF0070;
-    --color-electric-purple: #DB00FF;
-    --color-soft-rose: #F1B2CE;
-    --color-navy-deep: #000028;
-    --color-ash-dark: #353430;
-    --color-rose-pastel: #FFC2E6;
-    --color-fuchsia-vivid: #FF8DCB;
-
-    /* Цвета элементов */
-    /* Текст */
-    --text-color-primary: var(--color-hot-pink);
-    --text-color-secondary: var(--color-navy-deep);
-    --text-color-tetriary: var(--color-soft-rose);
-    --text-color-quaternary: var(--color-electric-purple);
-
+    /* Цвета */
+    --theme-button-color: #FF0070;
+    --theme-button-color-hover: rgba(255 0 112 / .4);
+    --slogan-color: #DB00FF;
+    --header-title-color: #000028;
+    --section-title-color: #FF0070;
+    --section-subtitle-color: #000028;
+    --text-color: #F1B2CE;
 
     /* Декор */
-    --accent-color: var(--color-hot-pink);
-    --shadow-color: var(--color-hot-pink);
-    --text-shadow-normal: 4px 4px var(--color-hot-pink);
-    --text-shadow-small: 2px 2px var(--color-hot-pink);
+    --accent-color: #FF0070;
+    --decorate-color: #FF0070;
+
+    --text-shadow-normal: 4px 4px var(--accent-color);
+    --text-shadow-small: 2px 2px var(--accent-color);
 
     /* Отступы */
     --page-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /* 10-20px */
@@ -36,5 +29,5 @@
     /* Фоновые картинки */
     --page-bg-avif:url(/images/cover-image-dark.avif);
     --page-bg-webp:url(/images/cover-image-dark.webp);
-    --page-bg-png:url(/images/cover-image-dark.webp);
+    --page-bg-png:url(/images/cover-image-dark.jpg);
 }
